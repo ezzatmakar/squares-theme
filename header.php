@@ -9,28 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="SquaresMosaic" />
-
-
-
-
-
     <!-- #Social Media -->
 
-    <link rel="icon" href="assets/img/social/favicon-16x16.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="assets/img/social/favicon-32x32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="assets/img/social/favicon-96x96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-16x16.png" sizes="16x16"
+        type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-32x32.png" sizes="32x32"
+        type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-96x96.png" sizes="96x96"
+        type="image/png" />
 
     <meta property="og:site_name" content="SquaresMosaic" />
     <meta property="og:title" content="Squares Mosaic" />
     <meta property="og:description" content="Squares Mosaic" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/social/website-img.jpg" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/img/social/website-img.jpg" />
     <meta property="og:url" content="https://squaresmosaic.com/" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Squares Mosaic" />
     <meta name="twitter:description" content="Squares Mosaic" />
     <meta name="twitter:site" content="@Squares" />
-    <meta name="twitter:image" content="assets/img/social/website-img.jpg" />
+    <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/assets/img/social/website-img.jpg" />
     <meta name="twitter:creator" content="@SquaresMosaic" />
 
     <meta name="robots" content="index, follow" />
@@ -65,7 +63,7 @@
 
     <div class="preloader">
         <div class="preloader-logo">
-            <img src="assets/img/logo.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="" />
         </div>
         <div class="preloader-body">
             <div id="loadingProgressG">
@@ -84,7 +82,11 @@
             <div class="container">
 
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" /></a>
+                    <?php $logo = get_field('logo', 'option'); 
+                    $logo_image = wp_get_attachment_url($logo);
+                    ?>
+                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo $logo_image; ?>"
+                            alt="" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
