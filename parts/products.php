@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="title-page text-center">
-            <h2 class="tit-bg-01">All Products</h2>
+            <h2 class="tit-bg-01">All Applications</h2>
         </div>
 
         <ul class="nav nav-pills mb-4" role="tablist">
@@ -10,7 +10,7 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="all-products-tab" data-bs-toggle="pill"
                     data-bs-target="#all-products" type="button" role="tab" aria-controls="all-products"
-                    aria-selected="true">All Products</button>
+                    aria-selected="true">All Applications</button>
             </li>
             <?php 
             $all_products = get_field('product');

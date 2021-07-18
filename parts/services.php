@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="title-page text-center">
-            <h2>Squares mosaic</h2>
+            <h2>Our Services</h2>
             <!-- <h5>Lorem ipsum dolor sit amet</h5> -->
         </div>
 
@@ -24,12 +24,12 @@
             </li>
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="services-03-tab" data-bs-toggle="pill" data-bs-target="#services-03"
-                    type="button" role="tab" aria-controls="services-03" aria-selected="false">We Supply</button>
+                <button class="nav-link" id="services-04-tab" data-bs-toggle="pill" data-bs-target="#services-04"
+                    type="button" role="tab" aria-controls="services-04" aria-selected="false">We Supply</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="services-03-tab" data-bs-toggle="pill" data-bs-target="#services-03"
-                    type="button" role="tab" aria-controls="services-03" aria-selected="false">We install</button>
+                <button class="nav-link" id="services-05-tab" data-bs-toggle="pill" data-bs-target="#services-05"
+                    type="button" role="tab" aria-controls="services-05" aria-selected="false">We install</button>
             </li>
 
         </ul>

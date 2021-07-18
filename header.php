@@ -105,16 +105,18 @@
                                 <a class="nav-link" href="#squares-mosaics">Squares mosaic</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#products">Products</a>
+                                <a class="nav-link" href="#products">Applications</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Our services</a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#factory">Our factory</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#gallery"><?php  echo get_field('section_title');?></a>
+                                <a class="nav-link" href="#gallery"><?php echo get_field('section_title');?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact Us</a>
