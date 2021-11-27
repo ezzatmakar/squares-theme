@@ -581,14 +581,14 @@ p.right-page::before {
   margin-bottom: 0;
 }
 
-#products {
+#applications {
   position: relative;
   background-color: #f8f8f8;
   z-index: 0;
   overflow: hidden;
 }
 
-#products::before {
+#applications::before {
   content: "";
   background: #e6fbfc;
   position: absolute;
@@ -600,12 +600,12 @@ p.right-page::before {
   transform: rotate(-55deg);
 }
 
-#process {
+#gallery {
   /* border-bottom: 1px solid #d6d6d6; */
   position: relative;
 }
 
-#process::before {
+#gallery::before {
   content: "";
   background: #e6fbfc;
   position: absolute;
@@ -683,11 +683,11 @@ p.right-page::before {
     display: none;
   }
 
-  #products::before {
+  #applications::before {
     display: none;
   }
 
-  #process::before {
+  #factory::before {
     display: none;
   }
 

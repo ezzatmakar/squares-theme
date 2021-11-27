@@ -1,4 +1,4 @@
-<section id="products" class="py-7">
+<section id="applications" class="py-7">
     <div class="container">
 
         <div class="title-page text-center">
@@ -11,6 +11,9 @@
                 <button class="nav-link active" id="all-products-tab" data-bs-toggle="pill"
                     data-bs-target="#all-products" type="button" role="tab" aria-controls="all-products"
                     aria-selected="true">All Applications</button>
+            </li>
+			<li class="nav-item" role="presentation">
+                <button class="nav-link" id="product-001-tab" data-bs-toggle="pill" data-bs-target="#product-001" type="button"                            role="tab" aria-controls="product-001" aria-selected="false"><?php echo get_field('brief_title');?></button>
             </li>
             <?php 
             $all_products = get_field('product');
@@ -55,10 +58,18 @@
                     <?php
                     }
                 }
-                
                 ?>
-
-
+                </div>
+            </div>
+			<div class="tab-pane fade" id="product-001" role="tabpanel" aria-labelledby="product-001-tab">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="left-page"><?php echo get_field('breif_description');?></p>
+                    </div>
+                    <div class="col-lg-3 mt-4 z-2">
+                        <div class="img-bg-left" style="background-image: url(<?php echo get_field('brief_image');?>)">
+                        </div>
+                    </div>
                 </div>
             </div>
             <?php 

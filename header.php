@@ -61,16 +61,16 @@
 <body>
     <!-- Preloader -->
 
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="preloader-logo">
-            <img src="<?php //echo get_template_directory_uri() ?>/assets/img/logo.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="" />
         </div>
         <div class="preloader-body">
             <div id="loadingProgressG">
                 <div class="loadingProgressG" id="loadingProgressG_1"></div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- End Preloader -->
 
@@ -96,7 +96,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto metismenu">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#index">Home</a>
+                                <a id="slider" class="nav-link active" href="#index">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-mosaics">About mosaic</a>
@@ -105,7 +105,7 @@
                                 <a class="nav-link" href="#squares-mosaics">Squares mosaic</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#products">Applications</a>
+                                <a class="nav-link" href="#applications">Applications</a>
                             </li>
 
                             <li class="nav-item">
