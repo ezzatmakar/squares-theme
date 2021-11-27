@@ -11,19 +11,16 @@
     <meta name="author" content="SquaresMosaic" />
     <!-- #Social Media -->
 
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-16x16.png" sizes="16x16"
-        type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-32x32.png" sizes="32x32"
-        type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-96x96.png" sizes="96x96"
-        type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/social/favicon-96x96.png" sizes="96x96" type="image/png" />
 
     <meta property="og:site_name" content="SquaresMosaic" />
     <meta property="og:title" content="Squares Mosaic" />
     <meta property="og:description" content="Squares Mosaic" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/img/social/website-img.jpg" />
-    <meta property="og:url" content="https://squaresmosaic.com/" />
+    <meta property="og:url" content="<?php echo home_url() ?>" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Squares Mosaic" />
     <meta name="twitter:description" content="Squares Mosaic" />
@@ -33,7 +30,7 @@
 
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://squares.com/" />
+    <link rel="canonical" href="<?php echo home_url() ?>" />
 
     <!-- #Social Media End -->
 
@@ -82,16 +79,12 @@
             <div class="container">
 
                 <nav class="navbar navbar-expand-lg">
-                    <?php $logo = get_field('logo', 'option'); 
+                    <?php $logo = get_field('logo', 'option');
                     $logo_image = wp_get_attachment_url($logo);
                     ?>
-                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo $logo_image; ?>"
-                            alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><img
-                                src="<?php echo get_template_directory_uri() ?>/assets/img/menu.svg" alt="" /></span>
+                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo $logo_image; ?>" alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.svg" alt="" /></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto metismenu">
@@ -116,7 +109,7 @@
                                 <a class="nav-link" href="#factory">Our factory</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#gallery"><?php echo get_field('section_title');?></a>
+                                <a class="nav-link" href="#gallery"><?php echo get_field('section_title'); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact Us</a>
